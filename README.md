@@ -16,3 +16,15 @@
    "C:\Program Files\Google\Chrome\Application\chrome.exe" --proxy-pac-url="data:application/x-javascript-config;base64,ZnVuY3Rpb24gRmluZFByb3h5Rm9yVVJMKHVybCwgaG9zdCkgew0KICAgIC8vY2hyb21lIOa1j+iniOWZqOiwg+eUqOe/u+ivkWFwaeaXtizkvb/nlKjku6PnkIYNCiAgICBpZiAoc2hFeHBNYXRjaCh1cmwsICIqdHJhbnNsYXRlLmdvb2dsZWFwaXMuY29tKiIpKSB7DQogICAgICAgIHJldHVybiAnU09DS1M1IDEyNy4wLjAuMToyMDgxJzsNCiAgICB9DQogICAgcmV0dXJuICdESVJFQ1QnOw0KfQ=="
    ```
 4. 重启chrome浏览器
+
+bat
+```bat
+@echo off 
+if "%1" == "h" goto begin 
+mshta vbscript:createobject("wscript.shell").run("""%~nx0"" h",0)(window.close)&&exit 
+:begin 
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --proxy-pac-url="data:application/x-javascript-config;base64,ZnVuY3Rpb24gRmluZFByb3h5Rm9yVVJMKHVybCwgaG9zdCkgew0KICAgIC8vY2hyb21lIOa1j+iniOWZqOiwg+eUqOe/u+ivkWFwaeaXtizkvb/nlKjku6PnkIYNCiAgICBpZiAoc2hFeHBNYXRjaCh1cmwsICIqdHJhbnNsYXRlLmdvb2dsZWFwaXMuY29tKiIpKSB7DQogICAgICAgIHJldHVybiAnU09DS1M1IDEyNy4wLjAuMToyMDgxJzsNCiAgICB9DQogICAgcmV0dXJuICdESVJFQ1QnOw0KfQ=="
+
+
+
+```
